@@ -66,9 +66,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Isogram\IsogramTests.cs" />
-    <Compile Include="Preference\OptionATests.cs" />
-    <Compile Include="Preference\OptionBTests.cs" />
+    <Compile Include="Test3\IsogramTests.cs" />
+    <Compile Include="Test1\OptionATests.cs" />
+    <Compile Include="Test1\OptionBTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
