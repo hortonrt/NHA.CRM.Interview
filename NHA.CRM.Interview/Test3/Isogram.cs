@@ -22,10 +22,7 @@ namespace NHA.CRM.Interview
 
         public static bool IsValid(string WordToTest)
         {
-            if (WordToTest == null) throw new ArgumentNullException("WordToTest", "Value is null");
-            if (!WordToTest.All(Char.IsLetter)) throw new ArgumentException("Must be letters only", "WordToTest");
-            if (WordToTest.ToLower().Distinct().Count() == WordToTest.Length) return true;
-            return false;
+           throw new NotImplementedException();
         }
     }
 }
