@@ -56,7 +56,7 @@ namespace NHA.CRM.Interview.Tests
             bool allFalse = true;
             notIsograms.ForEach(word =>
             {
-                if (!Isogram.IsValid(word))
+                if (Isogram.IsValid(word))
                 {
                     allFalse = false;
                 }

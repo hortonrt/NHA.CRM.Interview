@@ -46,13 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Isogram\Isogram.cs" />
-    <Compile Include="Models\WorldClock.cs" />
-    <Compile Include="Preference\OptionA.cs" />
-    <Compile Include="Preference\OptionB.cs" />
+    <Compile Include="Test3\Isogram.cs" />
+    <Compile Include="Test1\WorldClock.cs" />
+    <Compile Include="Test1\OptionA.cs" />
+    <Compile Include="Test1\OptionB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CanYouTellMe\CanYouTellMe.cs" />
+    <Compile Include="Test2\CanYouTellMe.cs" />
     <Compile Include="WorldClockRunner.cs" />
   </ItemGroup>
   <ItemGroup>
