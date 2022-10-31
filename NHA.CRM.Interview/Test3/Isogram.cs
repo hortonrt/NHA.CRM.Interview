@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace NHA.CRM.Interview
@@ -22,7 +23,45 @@ namespace NHA.CRM.Interview
 
         public static bool IsValid(string WordToTest)
         {
-           throw new NotImplementedException();
+           if (!WordToTest.All(char.IsLetter))
+            {
+                throw new ArgumentException("Not good", "WordToTest");
+            }
+
+           if (WordToTest == null)
+            {
+                throw new ArgumentNullException(WordToTest, "is null");
+            }
+
+           if (WordToTest == "")
+            {
+                return true;
+            }
+
+            WordToTest = WordToTest.ToLower();
+
+            //var wordArray = new[] { WordToTest };
+
+            Dictionary<char, int> dictionary = new Dictionary<char, int>();
+
+            foreach (char character in WordToTest)
+            {
+                if (character != ' ')
+                {
+                    if (!dictionary.ContainsKey(character))
+                    {
+                        dictionary.Add(character, 1);
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+
+           // throw new NotImplementedException();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace NHA.CRM.Interview
 					if (!dictionary.ContainsKey(character)) {
 						dictionary.Add(character, 1);
 					} else {
-						dictionary[character]++;
+						dictionary[character]++; 
 					}
 				}
 			}

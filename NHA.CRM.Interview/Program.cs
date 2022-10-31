@@ -9,7 +9,7 @@ namespace NHA.CRM.Interview
             #region Test1
             //WorldClock
             //run the following, pick what the differences between option a and b 
-            WorldClockRunner.Run();
+            //WorldClockRunner.Run();
             #endregion
 
             #region Test2
