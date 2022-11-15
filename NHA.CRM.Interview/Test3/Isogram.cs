@@ -13,7 +13,7 @@ namespace NHA.CRM.Interview
          * Implement a function that determines whether a string that contains only letters is an isogram. 
          * 
          * Rules
-         * 1) Letters Only, throw InvalidArgumentException
+         * 1) Letters Only, throw ArgumentException
          * 2) No Nulls, throw ArgumentNullException
          * 3) Assume the empty string is an isogram
          * 4) Ignore letter case
