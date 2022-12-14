@@ -24,13 +24,13 @@ namespace NHA.CRM.Interview.Models
         public bool Dst { get; set; }
 
         [JsonProperty("dst_from")]
-        public DateTime DstFrom { get; set; }
+        public DateTime? DstFrom { get; set; }
 
         [JsonProperty("dst_offset")]
         public int DstOffset { get; set; }
 
         [JsonProperty("dst_until")]
-        public DateTime DstUntil { get; set; }
+        public DateTime? DstUntil { get; set; }
 
         [JsonProperty("raw_offset")]
         public int RawOffset { get; set; }
