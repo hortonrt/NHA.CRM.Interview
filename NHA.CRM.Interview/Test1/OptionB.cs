@@ -18,8 +18,8 @@ namespace NHA.CRM.Interview.Preference
 		{
 			var response = await HttpClient.GetAsync("http://worldtimeapi.org/api/timezone/America/Detroit");
 			var result = await response.Content.ReadAsStringAsync();
-            var clock = JsonConvert.DeserializeObject<WorldClock>(result);
-            return clock;
-        }
+			var clock = JsonConvert.DeserializeObject<WorldClock>(result);
+			return clock;
+	        }
 	}
 }
